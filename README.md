@@ -50,3 +50,6 @@ Note: the package must be in development mode. Make sure you run `pkg> develop p
 julia> using Keygen, MatLang
 julia> documenter_keygen(MatLang)
 ```
+
+# Motivation
+The first goal is to provide those OpenSSH APIs (like ssh-keygen). In addition, it plans to have an application layer, that is to provide a single goto package that can be used for generating keys for all sorts of applications (e.g Documenter, GitHub secrets, etc). PkgTemplates will also use this single Keygen package for generating the keys it needs for its plugins.
