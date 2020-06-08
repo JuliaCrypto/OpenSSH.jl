@@ -18,16 +18,16 @@ respectively.
 
 # Examples
 ```julia-repl
-julia> using Keygen
+julia> using OpenSSH
 julia> documenter_keygen()
 [ Info: add the public key below to https://github.com/USER/REPO/settings/keys with read/write access:
 ssh-rsa AAAAB3NzaC2yc2EAAAaDAQABAAABAQDrNsUZYBWJtXYUk21wxZbX3KxcH8EqzR3ZdTna0Wgk...jNmUiGEMKrr0aqQMZEL2BG7 username@hostname
 [ Info: add a secure environment variable named 'DOCUMENTER_KEY' to https://travis-ci.com/USER/REPO/settings (if you deploy using Travis CI) or https://github.com/USER/REPO/settings/secrets (if you deploy using GitHub Actions) with value:
 LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBNnpiRkdXQVZpYlIy...QkVBRWFjY3BxaW9uNjFLaVdOcDU5T2YrUkdmCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
-julia> documenter_keygen(user="JuliaDocs", repo="Keygen.jl")
-[Info: add the public key below to https://github.com/JuliaDocs/Keygen.jl/settings/keys with read/write access:
+julia> documenter_keygen(user="JuliaDocs", repo="OpenSSH.jl")
+[Info: add the public key below to https://github.com/JuliaDocs/OpenSSH.jl/settings/keys with read/write access:
 ssh-rsa AAAAB3NzaC2yc2EAAAaDAQABAAABAQDrNsUZYBWJtXYUk21wxZbX3KxcH8EqzR3ZdTna0Wgk...jNmUiGEMKrr0aqQMZEL2BG7 username@hostname
-[ Info: add a secure environment variable named 'DOCUMENTER_KEY' to https://travis-ci.com/JuliaDocs/Keygen.jl/settings (if you deploy using Travis CI) or https://github.com/JuliaDocs/Keygen.jl/settings/secrets (if you deploy using GitHub Actions) with value:
+[ Info: add a secure environment variable named 'DOCUMENTER_KEY' to https://travis-ci.com/JuliaDocs/OpenSSH.jl/settings (if you deploy using Travis CI) or https://github.com/JuliaDocs/OpenSSH.jl/settings/secrets (if you deploy using GitHub Actions) with value:
 LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBNnpiRkdXQVZpYlIy...QkVBRWFjY3BxaW9uNjFLaVdOcDU5T2YrUkdmCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
 ```
 """
@@ -85,11 +85,11 @@ This method requires `git` to be available from the command line.
 
 # Examples
 ```julia-repl
-julia> using Keygen
+julia> using OpenSSH
 julia> documenter_keygen(Keygen)
-[Info: add the public key below to https://github.com/JuliaDocs/Keygen.jl/settings/keys with read/write access:
+[Info: add the public key below to https://github.com/JuliaDocs/OpenSSH.jl/settings/keys with read/write access:
 ssh-rsa AAAAB3NzaC2yc2EAAAaDAQABAAABAQDrNsUZYBWJtXYUk21wxZbX3KxcH8EqzR3ZdTna0Wgk...jNmUiGEMKrr0aqQMZEL2BG7 username@hostname
-[ Info: add a secure environment variable named 'DOCUMENTER_KEY' to https://travis-ci.com/JuliaDocs/Keygen.jl/settings (if you deploy using Travis CI) or https://github.com/JuliaDocs/Keygen.jl/settings/secrets (if you deploy using GitHub Actions) with value:
+[ Info: add a secure environment variable named 'DOCUMENTER_KEY' to https://travis-ci.com/JuliaDocs/OpenSSH.jl/settings (if you deploy using Travis CI) or https://github.com/JuliaDocs/OpenSSH.jl/settings/secrets (if you deploy using GitHub Actions) with value:
 LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBNnpiRkdXQVZpYlIy...QkVBRWFjY3BxaW9uNjFLaVdOcDU5T2YrUkdmCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==
 ```
 """

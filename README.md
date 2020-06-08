@@ -1,6 +1,6 @@
-# Keygen
+# OpenSSH
 
-[![Build Status](https://github.com/aminya/Keygen.jl/workflows/CI/badge.svg)](https://github.com/aminya/Keygen.jl/actions)
+[![Build Status](https://github.com/JuliaCrypto/OpenSSH.jl/workflows/CI/badge.svg)](https://github.com/JuliaCrypto/OpenSSH.jl/actions)
 
 Generate keys!
 
@@ -14,7 +14,7 @@ Generates the SSH keys that are required for the automatic deployment of documen
 By default the links in the instructions need to be modified to correspond to actual URLs.
 
 ```julia
-julia> using Keygen
+julia> using OpenSSH
 julia> documenter_keygen()
 ```
 ------
@@ -27,8 +27,8 @@ The optional `user` and `repo` keyword arguments can be specified so that the UR
 respectively.
 
 ```julia
-julia> using Keygen
-julia> documenter_keygen(user="JuliaDocs", repo="Keygen.jl")
+julia> using OpenSSH
+julia> documenter_keygen(user="JuliaDocs", repo="OpenSSH.jl")
 ```
 
 -------
@@ -47,7 +47,7 @@ Note: the package must be in development mode. Make sure you run `pkg> develop p
 
 
 ```julia
-julia> using Keygen, MatLang
+julia> using OpenSSH, MatLang
 julia> documenter_keygen(MatLang)
 ```
 

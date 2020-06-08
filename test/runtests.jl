@@ -1,7 +1,7 @@
-using Keygen
+using OpenSSH
 using Test
 
-@testset "Keygen.jl" begin
+@testset "OpenSSH.jl" begin
 
     @testset "documenter_keygen-added" begin
         using Example

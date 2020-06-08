@@ -1,4 +1,4 @@
-module Keygen
+module OpenSSH
 
 include("utilities.jl")
 include("documenter_keygen.jl")
